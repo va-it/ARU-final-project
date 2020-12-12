@@ -1,0 +1,18 @@
+{
+    "opening-tag": "{",
+    "closing-tag": "}",
+    "body": "<html>\n<header>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css\" integrity=\"sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2\" crossorigin=\"anonymous\">\n<style>\n.body{font-family:Roboto, Arial,sans-serif; margin:0;}.basic-container{padding:30px;width:1920px;height:1080px;}\n</style>\n<title>Framework</title>\n</header>\n<body>\n {}\n <div class=\"row justify-content-center mt-3\"><div class=\"col-3 text-center text-muted\">&copy; Vincenzo Abete - 2020</div></div></body>\n</html>\n",
+    "header" : "<div class=\"container-fluid\">\n<div class=\"row\">\n<div class=\"col ml-3\">\n{}\n</div>\n</div>\n</div>",
+    "row": "<div class=\"row mb-3\">\n{}\n</div>\n",
+    "cards" : "\n",
+    "card" : "<div class=\"col\"><div class=\"card bg-light\"><div class=\"card-body\">\n{}\n</div>\n<div>\n</div>",
+    "btn-primary" : "<button class=\"btn btn-primary mr-2 my-1\">[]</button>\n",
+    "btn-secondary" : "<button class=\"btn btn-secondary mr-2 my-1\">[]</button>\n",
+    "btn-danger" : "<button class=\"btn btn-danger mr-2 my-1\">[]</button>\n",
+    "btn-warning" : "<button class=\"btn btn-warning mr-2 my-1\">[]</button>\n",
+    "btn-success" : "<button class=\"btn btn-success mr-2 my-1\">[]</button>\n",
+    "btn-info" : "<button class=\"btn btn-info mr-2 my-1\">[]</button>\n",
+    "title" : "<h4 class=\"card-title\">[]</h4>\n",
+    "text" : "<p>[]</p>\n",
+    "input" : "<input class=\"form-control my-1\" placeholder=\"[]\" />"
+}
