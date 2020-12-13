@@ -8,6 +8,7 @@ import sys
 from os.path import basename
 from classes.Sampler import *
 from classes.model.pix2code import *
+from classes.model.Config import *
 
 argv = sys.argv[1:]
 
