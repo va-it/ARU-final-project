@@ -6,8 +6,8 @@ import sys
 
 
 from os.path import basename
-from compiler.classes.Utils import *
-from compiler.classes.Compiler import *
+from classes.Utils import *
+from classes.Compiler import *
 
 if __name__ == "__main__":
     argv = sys.argv[1:]

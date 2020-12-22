@@ -2,7 +2,7 @@
 __author__ = 'Tony Beltramelli - www.tonybeltramelli.com'
 
 import json
-from compiler.classes.Node import *
+from classes.Node import *
 
 
 class Compiler:
