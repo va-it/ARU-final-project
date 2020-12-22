@@ -27,6 +27,8 @@ compiler = Compiler(dsl_path)
 
 
 def render_content_with_text(key, value):
+    text_inputs = ["input-text", "input-password"]
+    control_inputs = ["input-checkbox", "input-radio"]
     if FILL_WITH_RANDOM_TEXT:
         if key.find("btn") != -1:
             value = value.replace(TEXT_PLACE_HOLDER, Utils.get_random_text())
@@ -35,8 +37,10 @@ def render_content_with_text(key, value):
         elif key.find("text") != -1:
             value = value.replace(TEXT_PLACE_HOLDER,
                                   Utils.get_random_text(length_text=56, space_number=7, with_upper_case=False))
-        elif key.find("input") != -1:
+        elif any(text_input in key for text_input in text_inputs):
             value = value.replace(TEXT_PLACE_HOLDER, Utils.get_random_text(length_text=30, space_number=0))
+        elif any(control_input in key for control_input in control_inputs):
+            value = value.replace(TEXT_PLACE_HOLDER, Utils.get_random_text(length_text=5, space_number=0))
     return value
 
 file_uid = basename(input_file)[:basename(input_file).find(".")]
