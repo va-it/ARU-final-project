@@ -40,7 +40,7 @@ def render_content_with_text(key, value):
         elif any(text_input in key for text_input in text_inputs):
             value = value.replace(TEXT_PLACE_HOLDER, Utils.get_random_text(length_text=30, space_number=0))
         elif any(control_input in key for control_input in control_inputs):
-            value = value.replace(TEXT_PLACE_HOLDER, Utils.get_random_text(length_text=5, space_number=0))
+            value = value.replace(TEXT_PLACE_HOLDER, Utils.get_random_text(length_text=10, space_number=0))
     return value
 
 file_uid = basename(input_file)[:basename(input_file).find(".")]
