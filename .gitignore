@@ -154,9 +154,7 @@ crashlytics-build.properties
 fabric.properties
 
 # Generated dataset files
-datasets/*
-!datasets/pix2code_datasets.z*
-!datasets.z*
+dataset/*
 !dataset.z*
 
 # Training output
