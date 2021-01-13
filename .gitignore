@@ -155,7 +155,7 @@ fabric.properties
 
 # Generated dataset files
 dataset/*
-dataset_joinez.zip
+dataset_joined.zip
 !dataset.z*
 
 # Training output
