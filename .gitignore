@@ -160,3 +160,6 @@ dataset_joined.zip
 
 # Training output
 bin/
+
+# Training Logs
+logs/
