@@ -1,0 +1,36 @@
+Calculate BLEU score
+
+# get original gui file (original_gui)
+# get generated gui file (generated_gui)
+
+
+# store tokens for generated gui inside candidate array
+candidate = []
+for line in generated_gui:
+	line = line.replace(',', ' ,').replace('\n', ' \n')
+	tokens = line.split(' ')
+	for token in tokens:
+        	self.voc.append(token)
+        	candidate.append(token)
+        	
+        	
+# store tokens for original gui inside array
+original_token_sequence = []
+for line in original_gui:
+	line = line.replace(',', ' ,').replace('\n', ' \n')
+	tokens = line.split(' ')
+	for token in tokens:
+		self.voc.append(token)
+        	original_token_sequence.append(token)
+        	
+
+
+from nltk.translate.bleu_score import sentence_bleu
+reference = []
+# The reference is expected to be a list of sentences
+reference.append(original_token_sequence)
+# The candidate sentence is as a list of tokens.
+candidate = ['this', 'is', 'a', 'test']
+score = sentence_bleu(reference, candidate)
+print(score)
+
