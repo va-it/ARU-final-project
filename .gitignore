@@ -155,11 +155,11 @@ fabric.properties
 
 # Generated dataset files
 dataset/*
+dataset_joined.zip
 !dataset.z*
-
-model/*
-bin/*
-code/*
 
 # Training output
 bin/
+
+# Training Logs
+logs/
