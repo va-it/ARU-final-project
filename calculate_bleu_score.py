@@ -51,7 +51,7 @@ for generated_gui in os.listdir(generated_code_folder):
                     reference.append(original_token_sequence)
                     score = sentence_bleu(reference, candidate)
                     scores.append(score)
+                    print(score)
 
 # calculate the average BLEU score and print it
-
-print (sum(scores) / len(scores))
+print('Average: {}'.format(sum(scores) / len(scores)))
